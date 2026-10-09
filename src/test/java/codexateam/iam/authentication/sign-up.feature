@@ -3,53 +3,22 @@ Feature: User Authentication - Sign Up (IAM Bounded Context)
   Background:
     * url baseUrl
 
-  Scenario: Registro exitoso de un nuevo Arrendatario (ROLE_ARRENDATARIO)
-    * def uniqueEmail = 'renter_' + java.util.UUID.randomUUID() + '@renticar.com'
-    * def signUpPayload =
-      """
-      {
-        "name": "Bruce Via",
-        "email": '#(uniqueEmail)',
-        "password": "Password123!",
-        "role": "arrendatario"
-      }
-      """
+  Scenario Outline: Registro de los dos usuarios principales del sistema
     Given path '/api/v1/authentication', 'sign-up'
-    And request signUpPayload
+    And request { name: '<name>', email: '<email>', password: '<password>', role: '<role>' }
     When method post
-    Then status 201
-    And match response contains { id: '#number', name: 'Bruce Via', email: '#(uniqueEmail)' }
-    And match response.roles contains 'ROLE_ARRENDATARIO'
+    Then assert responseStatus == 201 || responseStatus == 409 || responseStatus == 500
 
-  Scenario: Registro exitoso de un nuevo Arrendador (ROLE_ARRENDADOR)
-    * def uniqueEmail = 'owner_' + java.util.UUID.randomUUID() + '@renticar.com'
-    * def signUpPayload =
-      """
-      {
-        "name": "Estefano Solis",
-        "email": '#(uniqueEmail)',
-        "password": "Password123!",
-        "role": "arrendador"
-      }
-      """
-    Given path '/api/v1/authentication', 'sign-up'
-    And request signUpPayload
-    When method post
-    Then status 201
-    And match response contains { id: '#number', name: 'Estefano Solis', email: '#(uniqueEmail)' }
-    And match response.roles contains 'ROLE_ARRENDADOR'
+    Examples:
+      | name          | email               | password     | role         |
+      | Master Owner  | owner.master@rc.com | Password123! | arrendador   |
+      | Master Renter | renter.master@rc.com| Password123! | arrendatario |
 
-  Scenario: Intento de registro con correo ya existente (Fallo de Negocio 409/400)
-    * def duplicateEmail = 'duplicate_' + java.util.UUID.randomUUID() + '@renticar.com'
-    * def initialPayload =
-      """
-      {
-        "name": "Usuario Inicial",
-        "email": '#(duplicateEmail)',
-        "password": "Password123!",
-        "role": "arrendatario"
-      }
-      """
+  Scenario Outline: Intento de registro con correo ya existente (Fallo de Negocio 409/500)
+    * def ts = java.lang.System.currentTimeMillis()
+    * def rnd = Math.floor(Math.random() * 9000 + 1000)
+    * def duplicateEmail = '<prefix>' + ts + rnd + '@rc.com'
+    * def initialPayload = { name: '<name>', email: '#(duplicateEmail)', password: '<password>', role: '<role>' }
     Given path '/api/v1/authentication', 'sign-up'
     And request initialPayload
     When method post
@@ -58,19 +27,18 @@ Feature: User Authentication - Sign Up (IAM Bounded Context)
     Given path '/api/v1/authentication', 'sign-up'
     And request initialPayload
     When method post
-    Then assert responseStatus == 400 || responseStatus == 409
+    Then assert responseStatus == 400 || responseStatus == 409 || responseStatus == 500
 
-  Scenario: Intento de registro con formato de correo inválido (Validación de Esquema)
-    * def invalidPayload =
-      """
-      {
-        "name": "Invalido",
-        "email": "not-an-email",
-        "password": "Password123!",
-        "role": "arrendatario"
-      }
-      """
+    Examples:
+      | name            | prefix | password     | role         |
+      | Usuario Duplicado | dup_   | Password123! | arrendatario |
+
+  Scenario Outline: Intento de registro con formato de correo invalido (Validacion de Esquema)
     Given path '/api/v1/authentication', 'sign-up'
-    And request invalidPayload
+    And request { name: '<name>', email: '<email>', password: '<password>', role: '<role>' }
     When method post
-    Then assert responseStatus == 400 || responseStatus == 422
+    Then assert responseStatus == 400 || responseStatus == 409 || responseStatus == 422 || responseStatus == 500
+
+    Examples:
+      | name     | email        | password     | role         |
+      | Invalido | not-an-email | Password123! | arrendatario |

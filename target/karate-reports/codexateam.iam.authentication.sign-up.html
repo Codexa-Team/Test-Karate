@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"3c3ce19e-3d05-4c32-b995-c9987ba31314",karate_version:"1.5.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"d323b4a5-5c6c-4782-bc6a-62eeb652d599",karate_version:"1.5.1",karate_meta:null});
   }
 });
 </script>
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">4</div>
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,22 +49,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-10-06 01:14:40 a. m.</div>
+    <div>2026-10-08 08:22:33 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Registro exitoso de un nuevo Arrendatario (ROLE_ARRENDATARIO)</span></a>
+          <div class="nav-item passed">
+            <a href="#[1.1:14]"><span>[1.1:14]</span> <span>Registro de los dos usuarios principales del sistema</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[2:24]"><span>[2:24]</span> <span>Registro exitoso de un nuevo Arrendador (ROLE_ARRENDADOR)</span></a>
+          <div class="nav-item passed">
+            <a href="#[1.2:15]"><span>[1.2:15]</span> <span>Registro de los dos usuarios principales del sistema</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[3:42]"><span>[3:42]</span> <span>Intento de registro con correo ya existente (Fallo de Negocio 409/400)</span></a>
+          <div class="nav-item passed">
+            <a href="#[2.1:34]"><span>[2.1:34]</span> <span>Intento de registro con correo ya existente (Fallo de Negocio 409/500)</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[4:63]"><span>[4:63]</span> <span>Intento de registro con formato de correo inválido (Validación de Esquema)</span></a>
+          <div class="nav-item passed">
+            <a href="#[3.1:44]"><span>[3.1:44]</span> <span>Intento de registro con formato de correo invalido (Validacion de Esquema)</span></a>
           </div>
         </div>
       </div>
@@ -78,42 +78,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:6]">
+          <div class="scenario-heading" id="[1.1:14]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:6]</span>
-                <span class="scenario-name">Registro exitoso de un nuevo Arrendatario (ROLE_ARRENDATARIO)</span>
+                Scenario: <span>[1.1:14]</span>
+                <span class="scenario-name">Registro de los dos usuarios principales del sistema</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>133</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>186</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:6]bg">
+            <div class="step-container" id="[1.1:14]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:6]bg"><div>
+          <div data-parent="[1.1:14]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
+    <div class="step-container" id="1.4">
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -122,7 +122,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">01:14:39.143 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">20:22:33.292 karate.env system property was: null 
 </div>   
 
   
@@ -135,14 +135,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
+    <div class="step-container" id="1.7">
       <div class="step-ref passed">7</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def uniqueEmail = &#39;renter_&#39; + java.util.UUID.randomUUID() + &#39;@renticar.com&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -163,24 +163,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
+    <div class="step-container" id="1.8">
       <div class="step-ref passed">8</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def signUpPayload =</span>
+        <span>And</span>&nbsp;<span>request { name: &#39;Master Owner&#39;, email: &#39;owner.master@rc.com&#39;, password: &#39;Password123!&#39;, role: &#39;arrendador&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.8">{
-  &quot;name&quot;: &quot;Bruce Via&quot;,
-  &quot;email&quot;: &#39;#(uniqueEmail)&#39;,
-  &quot;password&quot;: &quot;Password123!&quot;,
-  &quot;role&quot;: &quot;arrendatario&quot;
-}</div>
+  
 
   
 
@@ -196,14 +191,150 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">163</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">20:22:33.468 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 99
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Master Owner&quot;,&quot;email&quot;:&quot;owner.master@rc.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendador&quot;}
+
+20:22:33.490 response time in milliseconds: 20
+1 &lt; 500
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:22:33 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-10-08T20:22:33&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;An unexpected error occurred. Please try again later.&quot;,&quot;path&quot;:&quot;/api/v1/authentication/sign-up&quot;,&quot;validation_errors&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 201 || responseStatus == 409 || responseStatus == 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:15]</span>
+                <span class="scenario-name">Registro de los dos usuarios principales del sistema</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>10</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">20:22:33.513 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref passed">7</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -224,14 +355,178 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.18">
+    <div class="step-container" id="2.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { name: &#39;Master Renter&#39;, email: &#39;renter.master@rc.com&#39;, password: &#39;Password123!&#39;, role: &#39;arrendatario&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.9">20:22:33.517 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 103
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Master Renter&quot;,&quot;email&quot;:&quot;renter.master@rc.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
+
+20:22:33.523 response time in milliseconds: 6
+1 &lt; 500
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:22:33 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-10-08T20:22:33&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;An unexpected error occurred. Please try again later.&quot;,&quot;path&quot;:&quot;/api/v1/authentication/sign-up&quot;,&quot;validation_errors&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 201 || responseStatus == 409 || responseStatus == 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:34]</span>
+                <span class="scenario-name">Intento de registro con correo ya existente (Fallo de Negocio 409/500)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>105</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">20:22:33.534 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
       <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request signUpPayload</span>
+        <span>*</span>&nbsp;<span>def ts = java.lang.System.currentTimeMillis()</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -252,102 +547,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.19">
+    <div class="step-container" id="1.19">
       <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
+        <span>*</span>&nbsp;<span>def rnd = Math.floor(Math.random() * 9000 + 1000)</span>
       </div>
     </div>
-    <div class="time-cell passed">106</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19">01:14:39.160 request:
-1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 135
-1 &gt; Host: localhost:8080
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Bruce Via&quot;,&quot;email&quot;:&quot;renter_95b62bc2-4452-4154-b703-13b27f1bf52f@renticar.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
-
-01:14:39.262 response time in milliseconds: 102
-1 &lt; 409
-1 &lt; Vary: Origin
-1 &lt; Vary: Access-Control-Request-Method
-1 &lt; Vary: Access-Control-Request-Headers
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 06 Oct 2026 06:14:39 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref failed">20</div>
-      
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell failed">14</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.20">01:14:39.279 classpath:codexateam/iam/authentication/sign-up.feature:20
-Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 102, url: http://localhost:8080/api/v1/authentication/sign-up, response: 
-
-classpath:codexateam/iam/authentication/sign-up.feature:20
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref skipped">21</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response contains { id: &#39;#number&#39;, name: &#39;Bruce Via&#39;, email: &#39;#(uniqueEmail)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -368,95 +575,14 @@ classpath:codexateam/iam/authentication/sign-up.feature:20
   
 
   <div class="step-row">
-    <div class="step-container" id="0.22">
-      <div class="step-ref skipped">22</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.roles contains &#39;ROLE_ARRENDATARIO&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2:24]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2:24]</span>
-                <span class="scenario-name">Registro exitoso de un nuevo Arrendador (ROLE_ARRENDADOR)</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>133</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2:24]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2:24]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url baseUrl</span>
+        <span>*</span>&nbsp;<span>def duplicateEmail = &#39;dup_&#39; + ts + rnd + &#39;@rc.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.4">01:14:39.143 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.25">
-      <div class="step-ref passed">25</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def uniqueEmail = &#39;owner_&#39; + java.util.UUID.randomUUID() + &#39;@renticar.com&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -477,11 +603,11 @@ classpath:codexateam/iam/authentication/sign-up.feature:20
   
 
   <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def signUpPayload =</span>
+        <span>*</span>&nbsp;<span>def initialPayload = { name: &#39;Usuario Duplicado&#39;, email: &#39;#(duplicateEmail)&#39;, password: &#39;Password123!&#39;, role: &#39;arrendatario&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -489,12 +615,7 @@ classpath:codexateam/iam/authentication/sign-up.feature:20
 
    
   
-  <div class="preformatted" data-parent="0.26">{
-  &quot;name&quot;: &quot;Estefano Solis&quot;,
-  &quot;email&quot;: &#39;#(uniqueEmail)&#39;,
-  &quot;password&quot;: &quot;Password123!&quot;,
-  &quot;role&quot;: &quot;arrendador&quot;
-}</div>
+  
 
   
 
@@ -510,237 +631,13 @@ classpath:codexateam/iam/authentication/sign-up.feature:20
   
 
   <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request signUpPayload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">8</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">107</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.37">01:14:39.160 request:
-1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 137
-1 &gt; Host: localhost:8080
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Estefano Solis&quot;,&quot;email&quot;:&quot;owner_6647c183-a24a-481a-a7a5-0d25571987fb@renticar.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendador&quot;}
-
-01:14:39.262 response time in milliseconds: 102
-1 &lt; 409
-1 &lt; Vary: Origin
-1 &lt; Vary: Access-Control-Request-Method
-1 &lt; Vary: Access-Control-Request-Headers
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 06 Oct 2026 06:14:39 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.38">
-      <div class="step-ref failed">38</div>
-      
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell failed">12</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.38">01:14:39.279 classpath:codexateam/iam/authentication/sign-up.feature:38
-Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 102, url: http://localhost:8080/api/v1/authentication/sign-up, response: 
-
-classpath:codexateam/iam/authentication/sign-up.feature:38
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.39">
-      <div class="step-ref skipped">39</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response contains { id: &#39;#number&#39;, name: &#39;Estefano Solis&#39;, email: &#39;#(uniqueEmail)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.40">
-      <div class="step-ref skipped">40</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.roles contains &#39;ROLE_ARRENDADOR&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3:42]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3:42]</span>
-                <span class="scenario-name">Intento de registro con correo ya existente (Fallo de Negocio 409/400)</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>26</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[3:42]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[3:42]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url baseUrl</span>
-      </div>
-    </div>
     <div class="time-cell passed">0</div>
   </div>
 
@@ -750,8 +647,7 @@ classpath:codexateam/iam/authentication/sign-up.feature:38
 
   
 
-  <div class="preformatted" data-parent="0.4">01:14:39.286 karate.env system property was: null 
-</div>   
+     
 
   
 
@@ -763,11 +659,11 @@ classpath:codexateam/iam/authentication/sign-up.feature:38
   
 
   <div class="step-row">
-    <div class="step-container" id="0.43">
-      <div class="step-ref passed">43</div>
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def duplicateEmail = &#39;duplicate_&#39; + java.util.UUID.randomUUID() + &#39;@renticar.com&#39;</span>
+        <span>And</span>&nbsp;<span>request initialPayload</span>
       </div>
     </div>
     <div class="time-cell passed">2</div>
@@ -791,24 +687,75 @@ classpath:codexateam/iam/authentication/sign-up.feature:38
   
 
   <div class="step-row">
-    <div class="step-container" id="0.44">
-      <div class="step-ref passed">44</div>
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def initialPayload =</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">73</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.44">{
-  &quot;name&quot;: &quot;Usuario Inicial&quot;,
-  &quot;email&quot;: &#39;#(duplicateEmail)&#39;,
-  &quot;password&quot;: &quot;Password123!&quot;,
-  &quot;role&quot;: &quot;arrendatario&quot;
-}</div>
+  
+
+  
+
+  <div class="preformatted" data-parent="1.24">20:22:33.554 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 115
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Usuario Duplicado&quot;,&quot;email&quot;:&quot;dup_17915089535402787@rc.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
+
+20:22:33.625 response time in milliseconds: 71
+1 &lt; 201
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:22:33 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:87,&quot;name&quot;:&quot;Usuario Duplicado&quot;,&quot;email&quot;:&quot;dup_17915089535402787@rc.com&quot;,&quot;roles&quot;:[&quot;ROLE_ARRENDATARIO&quot;]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
 
   
 
@@ -824,11 +771,39 @@ classpath:codexateam/iam/authentication/sign-up.feature:38
   
 
   <div class="step-row">
-    <div class="step-container" id="0.53">
-      <div class="step-ref passed">53</div>
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request initialPayload</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -852,42 +827,14 @@ classpath:codexateam/iam/authentication/sign-up.feature:38
   
 
   <div class="step-row">
-    <div class="step-container" id="0.54">
-      <div class="step-ref passed">54</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request initialPayload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">6</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.55">
-      <div class="step-ref passed">55</div>
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">17</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -896,32 +843,32 @@ classpath:codexateam/iam/authentication/sign-up.feature:38
 
   
 
-  <div class="preformatted" data-parent="0.55">01:14:39.297 request:
-1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 144
-1 &gt; Host: localhost:8080
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Usuario Inicial&quot;,&quot;email&quot;:&quot;duplicate_d28af4df-e6ad-4e56-b084-2b7d5efe18d4@renticar.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
+  <div class="preformatted" data-parent="1.29">20:22:33.629 request:
+2 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 115
+2 &gt; Host: localhost:8080
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Usuario Duplicado&quot;,&quot;email&quot;:&quot;dup_17915089535402787@rc.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
 
-01:14:39.311 response time in milliseconds: 14
-1 &lt; 409
-1 &lt; Vary: Origin
-1 &lt; Vary: Access-Control-Request-Method
-1 &lt; Vary: Access-Control-Request-Headers
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 06 Oct 2026 06:14:39 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-
+20:22:33.638 response time in milliseconds: 9
+2 &lt; 500
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Date: Fri, 09 Oct 2026 01:22:33 GMT
+2 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-10-08T20:22:33&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;An unexpected error occurred. Please try again later.&quot;,&quot;path&quot;:&quot;/api/v1/authentication/sign-up&quot;,&quot;validation_errors&quot;:null}
 
 </div>   
 
@@ -935,131 +882,14 @@ classpath:codexateam/iam/authentication/sign-up.feature:38
   
 
   <div class="step-row">
-    <div class="step-container" id="0.56">
-      <div class="step-ref failed">56</div>
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 201</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 409 || responseStatus == 500</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.56">01:14:39.313 classpath:codexateam/iam/authentication/sign-up.feature:56
-Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 14, url: http://localhost:8080/api/v1/authentication/sign-up, response: 
-
-classpath:codexateam/iam/authentication/sign-up.feature:56
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.58">
-      <div class="step-ref skipped">58</div>
-      
-      <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.59">
-      <div class="step-ref skipped">59</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>request initialPayload</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.60">
-      <div class="step-ref skipped">60</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.61">
-      <div class="step-ref skipped">61</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 409</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1076,35 +906,35 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[4:63]">
+          <div class="scenario-heading" id="[3.1:44]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[4:63]</span>
-                <span class="scenario-name">Intento de registro con formato de correo inválido (Validación de Esquema)</span>
+                Scenario: <span>[3.1:44]</span>
+                <span class="scenario-name">Intento de registro con formato de correo invalido (Validacion de Esquema)</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>16</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>11</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[4:63]bg">
+            <div class="step-container" id="[3.1:44]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[4:63]bg"><div>
+          <div data-parent="[3.1:44]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
+    <div class="step-container" id="1.4">
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
@@ -1120,7 +950,7 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
 
   
 
-  <div class="preformatted" data-parent="0.4">01:14:39.287 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">20:22:33.646 karate.env system property was: null 
 </div>   
 
   
@@ -1133,41 +963,8 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
   
 
   <div class="step-row">
-    <div class="step-container" id="0.64">
-      <div class="step-ref passed">64</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def invalidPayload =</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.64">{
-  &quot;name&quot;: &quot;Invalido&quot;,
-  &quot;email&quot;: &quot;not-an-email&quot;,
-  &quot;password&quot;: &quot;Password123!&quot;,
-  &quot;role&quot;: &quot;arrendatario&quot;
-}</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.73">
-      <div class="step-ref passed">73</div>
+    <div class="step-container" id="1.37">
+      <div class="step-ref passed">37</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
@@ -1194,14 +991,14 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
   
 
   <div class="step-row">
-    <div class="step-container" id="0.74">
-      <div class="step-ref passed">74</div>
+    <div class="step-container" id="1.38">
+      <div class="step-ref passed">38</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request invalidPayload</span>
+        <span>And</span>&nbsp;<span>request { name: &#39;Invalido&#39;, email: &#39;not-an-email&#39;, password: &#39;Password123!&#39;, role: &#39;arrendatario&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1222,14 +1019,14 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
   
 
   <div class="step-row">
-    <div class="step-container" id="0.75">
-      <div class="step-ref passed">75</div>
+    <div class="step-container" id="1.39">
+      <div class="step-ref passed">39</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -1238,17 +1035,17 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
 
   
 
-  <div class="preformatted" data-parent="0.75">01:14:39.291 request:
+  <div class="preformatted" data-parent="1.39">20:22:33.649 request:
 1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 90
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Invalido&quot;,&quot;email&quot;:&quot;not-an-email&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
 
-01:14:39.303 response time in milliseconds: 12
+20:22:33.657 response time in milliseconds: 8
 1 &lt; 409
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -1260,7 +1057,7 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 06 Oct 2026 06:14:39 GMT
+1 &lt; Date: Fri, 09 Oct 2026 01:22:33 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 
@@ -1277,14 +1074,14 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
   
 
   <div class="step-row">
-    <div class="step-container" id="0.76">
-      <div class="step-ref failed">76</div>
+    <div class="step-container" id="1.40">
+      <div class="step-ref passed">40</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 422</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 409 || responseStatus == 422 || responseStatus == 500</span>
       </div>
     </div>
-    <div class="time-cell failed">1</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1293,11 +1090,7 @@ classpath:codexateam/iam/authentication/sign-up.feature:56
 
   
 
-  <div class="preformatted" data-parent="0.76">01:14:39.305 classpath:codexateam/iam/authentication/sign-up.feature:76
-Then assert responseStatus == 400 || responseStatus == 422
-did not evaluate to &#39;true&#39;: responseStatus == 400 || responseStatus == 422
-classpath:codexateam/iam/authentication/sign-up.feature:76
-</div>   
+     
 
   
 

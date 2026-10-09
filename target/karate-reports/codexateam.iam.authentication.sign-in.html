@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"3c3ce19e-3d05-4c32-b995-c9987ba31314",karate_version:"1.5.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"d323b4a5-5c6c-4782-bc6a-62eeb652d599",karate_version:"1.5.1",karate_meta:null});
   }
 });
 </script>
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">3</div>
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,19 +49,28 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-10-06 01:14:40 a. m.</div>
+    <div>2026-10-08 08:24:47 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Inicio de sesión exitoso con credenciales válidas y obtención de token JWT</span></a>
+          <div class="nav-item passed">
+            <a href="#[1.1:17]"><span>[1.1:17]</span> <span>Inicio de sesion exitoso con credenciales de los usuarios principales</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[2:22]"><span>[2:22]</span> <span>Intento de inicio de sesión con contraseña incorrecta (Fallo 401/400)</span></a>
+          <div class="nav-item passed">
+            <a href="#[1.2:18]"><span>[1.2:18]</span> <span>Inicio de sesion exitoso con credenciales de los usuarios principales</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[3:34]"><span>[3:34]</span> <span>Intento de inicio de sesión con correo no registrado (Fallo 404/401)</span></a>
+          <div class="nav-item passed">
+            <a href="#[2.1:28]"><span>[2.1:28]</span> <span>Intento de inicio de sesion con contrasena incorrecta (Fallo 401/400/500)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:29]"><span>[2.2:29]</span> <span>Intento de inicio de sesion con contrasena incorrecta (Fallo 401/400/500)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.1:42]"><span>[3.1:42]</span> <span>Intento de inicio de sesion con correo no registrado (Fallo 404/401/500)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.1:52]"><span>[4.1:52]</span> <span>Consultar informacion general del servicio de autenticacion</span></a>
           </div>
         </div>
       </div>
@@ -75,35 +84,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:6]">
+          <div class="scenario-heading" id="[1.1:17]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:6]</span>
-                <span class="scenario-name">Inicio de sesión exitoso con credenciales válidas y obtención de token JWT</span>
+                Scenario: <span>[1.1:17]</span>
+                <span class="scenario-name">Inicio de sesion exitoso con credenciales de los usuarios principales</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>769</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>232</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:6]bg">
+            <div class="step-container" id="[1.1:17]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:6]bg"><div>
+          <div data-parent="[1.1:17]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
+    <div class="step-container" id="1.4">
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
@@ -119,7 +128,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">01:14:38.476 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">20:24:47.297 karate.env system property was: null 
 </div>   
 
   
@@ -132,14 +141,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
+    <div class="step-container" id="1.7">
       <div class="step-ref passed">7</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def testEmail = &#39;signin_&#39; + java.util.UUID.randomUUID() + &#39;@renticar.com&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">111</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -157,80 +166,45 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Primero registrar usuario</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
+  
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;owner.master@rc.com&#39;, password: &#39;Password123!&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
       <div class="step-ref passed">9</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { name: &#39;Login Test&#39;, email: &#39;#(testEmail)&#39;, password: &#39;Password123!&#39;, role: &#39;arrendatario&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">641</div>
+    <div class="time-cell passed">200</div>
   </div>
 
    
@@ -239,18 +213,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.11">01:14:38.718 request:
-1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
+  <div class="preformatted" data-parent="1.9">20:24:47.459 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-in
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 136
+1 &gt; Content-Length: 57
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Login Test&quot;,&quot;email&quot;:&quot;signin_c99546c6-e17b-47a2-89dd-affd1b4c69ee@renticar.com&quot;,&quot;password&quot;:&quot;Password123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
+{&quot;email&quot;:&quot;owner.master@rc.com&quot;,&quot;password&quot;:&quot;Password123!&quot;}
 
-01:14:39.262 response time in milliseconds: 544
-1 &lt; 409
+20:24:47.533 response time in milliseconds: 72
+1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
 1 &lt; Vary: Access-Control-Request-Headers
@@ -260,11 +234,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 06 Oct 2026 06:14:39 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:24:47 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-
+{&quot;id&quot;:75,&quot;email&quot;:&quot;owner.master@rc.com&quot;,&quot;name&quot;:&quot;Master Owner&quot;,&quot;roles&quot;:[&quot;ROLE_ARRENDADOR&quot;],&quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvd25lci5tYXN0ZXJAcmMuY29tIiwiaWF0IjoxNzkxNTA5MDg3LCJleHAiOjE3OTIxMTM4ODd9.dMsPO0v3DrXPUL6UuZGmTQ9weSSR64DDxyF8B432umi3MCMh_1XxC-JE0OVguuwg3TWv8D1MvdW2M091usqwmw&quot;}
 
 </div>   
 
@@ -278,138 +253,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref failed">12</div>
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell failed">14</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.12">01:14:39.279 classpath:codexateam/iam/authentication/sign-in.feature:12
-Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 544, url: http://localhost:8080/api/v1/authentication/sign-up, response: 
-
-classpath:codexateam/iam/authentication/sign-in.feature:12
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Iniciar sesión</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref skipped">15</div>
-      
-      <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.16">
-      <div class="step-ref skipped">16</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(testEmail)&#39;, password: &#39;Password123!&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref skipped">17</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref skipped">18</div>
-      
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -430,14 +281,14 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
   
 
   <div class="step-row">
-    <div class="step-container" id="0.19">
-      <div class="step-ref skipped">19</div>
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
       
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response contains { id: &#39;#number&#39;, token: &#39;#string&#39;, email: &#39;#(testEmail)&#39; }</span>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { id: &#39;#number&#39;, token: &#39;#string&#39;, email: &#39;owner.master@rc.com&#39; }</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -458,14 +309,42 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
   
 
   <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref skipped">20</div>
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.roles contains &#39;ROLE_ARRENDADOR&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.token != &#39;&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -482,42 +361,42 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:22]">
+          <div class="scenario-heading" id="[1.2:18]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:22]</span>
-                <span class="scenario-name">Intento de inicio de sesión con contraseña incorrecta (Fallo 401/400)</span>
+                Scenario: <span>[1.2:18]</span>
+                <span class="scenario-name">Inicio de sesion exitoso con credenciales de los usuarios principales</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>134</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>69</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:22]bg">
+            <div class="step-container" id="[1.2:18]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:22]bg"><div>
+          <div data-parent="[1.2:18]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
+    <div class="step-container" id="2.4">
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -526,7 +405,7 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
 
   
 
-  <div class="preformatted" data-parent="0.4">01:14:39.143 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.4">20:24:47.558 karate.env system property was: null 
 </div>   
 
   
@@ -539,11 +418,672 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
   
 
   <div class="step-row">
-    <div class="step-container" id="0.23">
+    <div class="step-container" id="2.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;renter.master@rc.com&#39;, password: &#39;Password123!&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.9">20:24:47.565 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-in
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;renter.master@rc.com&quot;,&quot;password&quot;:&quot;Password123!&quot;}
+
+20:24:47.625 response time in milliseconds: 59
+1 &lt; 200
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:24:47 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:76,&quot;email&quot;:&quot;renter.master@rc.com&quot;,&quot;name&quot;:&quot;Master Renter Mod&quot;,&quot;roles&quot;:[&quot;ROLE_ARRENDATARIO&quot;],&quot;token&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZW50ZXIubWFzdGVyQHJjLmNvbSIsImlhdCI6MTc5MTUwOTA4NywiZXhwIjoxNzkyMTEzODg3fQ.CYRT97foDlhCmRlhy57pXvBmR6IlPVMHvpoXMgHzxYpsU0dQEgL8qy1NfujWSl_bCGTbZb34R32YibxG-VMJjw&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { id: &#39;#number&#39;, token: &#39;#string&#39;, email: &#39;renter.master@rc.com&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.roles contains &#39;ROLE_ARRENDATARIO&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.token != &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:28]</span>
+                <span class="scenario-name">Intento de inicio de sesion con contrasena incorrecta (Fallo 401/400/500)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>67</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">20:24:47.635 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;owner.master@rc.com&#39;, password: &#39;ContrasenaMal!&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
       <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def testEmail = &#39;badpass_&#39; + java.util.UUID.randomUUID() + &#39;@renticar.com&#39;</span>
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">61</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.23">20:24:47.636 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-in
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;owner.master@rc.com&quot;,&quot;password&quot;:&quot;ContrasenaMal!&quot;}
+
+20:24:47.697 response time in milliseconds: 60
+1 &lt; 500
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:24:47 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-10-08T20:24:47&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;An unexpected error occurred. Please try again later.&quot;,&quot;path&quot;:&quot;/api/v1/authentication/sign-in&quot;,&quot;validation_errors&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 401 || responseStatus == 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:29]</span>
+                <span class="scenario-name">Intento de inicio de sesion con contrasena incorrecta (Fallo 401/400/500)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>66</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">20:24:47.711 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;renter.master@rc.com&#39;, password: &#39;BadPassword99!&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">65</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.23">20:24:47.715 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-in
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 60
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;renter.master@rc.com&quot;,&quot;password&quot;:&quot;BadPassword99!&quot;}
+
+20:24:47.778 response time in milliseconds: 63
+1 &lt; 500
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:24:47 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-10-08T20:24:47&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;An unexpected error occurred. Please try again later.&quot;,&quot;path&quot;:&quot;/api/v1/authentication/sign-in&quot;,&quot;validation_errors&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 401 || responseStatus == 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:42]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:42]</span>
+                <span class="scenario-name">Intento de inicio de sesion con correo no registrado (Fallo 404/401/500)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>22</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.1:42]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.1:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">20:24:47.784 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ts = java.lang.System.currentTimeMillis()</span>
       </div>
     </div>
     <div class="time-cell passed">4</div>
@@ -567,11 +1107,95 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
   
 
   <div class="step-row">
-    <div class="step-container" id="0.24">
-      <div class="step-ref passed">24</div>
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-up&#39;</span>
+        <span>*</span>&nbsp;<span>def rnd = Math.floor(Math.random() * 9000 + 1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def nxEmail = &#39;nx_&#39; + ts + rnd + &#39;@rc.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(nxEmail)&#39;, password: &#39;AnyPassword123&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -595,42 +1219,14 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
   
 
   <div class="step-row">
-    <div class="step-container" id="0.25">
-      <div class="step-ref passed">25</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { name: &#39;BadPass User&#39;, email: &#39;#(testEmail)&#39;, password: &#39;CorrectPass123!&#39;, role: &#39;arrendatario&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
+    <div class="step-container" id="1.37">
+      <div class="step-ref passed">37</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">107</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -639,18 +1235,18 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
 
   
 
-  <div class="preformatted" data-parent="0.26">01:14:39.160 request:
-1 &gt; POST http://localhost:8080/api/v1/authentication/sign-up
+  <div class="preformatted" data-parent="1.37">20:24:47.800 request:
+1 &gt; POST http://localhost:8080/api/v1/authentication/sign-in
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 142
+1 &gt; Content-Length: 67
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;BadPass User&quot;,&quot;email&quot;:&quot;badpass_0816abe9-1d16-414a-ae6b-44d20a3f4a71@renticar.com&quot;,&quot;password&quot;:&quot;CorrectPass123!&quot;,&quot;role&quot;:&quot;arrendatario&quot;}
+{&quot;email&quot;:&quot;nx_17915090877894073@rc.com&quot;,&quot;password&quot;:&quot;AnyPassword123&quot;}
 
-01:14:39.262 response time in milliseconds: 102
-1 &lt; 409
+20:24:47.807 response time in milliseconds: 7
+1 &lt; 500
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
 1 &lt; Vary: Access-Control-Request-Headers
@@ -660,11 +1256,11 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Tue, 06 Oct 2026 06:14:39 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 09 Oct 2026 01:24:47 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-10-08T20:24:47&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;An unexpected error occurred. Please try again later.&quot;,&quot;path&quot;:&quot;/api/v1/authentication/sign-in&quot;,&quot;validation_errors&quot;:null}
 
 </div>   
 
@@ -678,131 +1274,14 @@ classpath:codexateam/iam/authentication/sign-in.feature:12
   
 
   <div class="step-row">
-    <div class="step-container" id="0.27">
-      <div class="step-ref failed">27</div>
+    <div class="step-container" id="1.38">
+      <div class="step-ref passed">38</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 201</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 401 || responseStatus == 404 || responseStatus == 500</span>
       </div>
     </div>
-    <div class="time-cell failed">13</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.27">01:14:39.279 classpath:codexateam/iam/authentication/sign-in.feature:27
-Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 102, url: http://localhost:8080/api/v1/authentication/sign-up, response: 
-
-classpath:codexateam/iam/authentication/sign-in.feature:27
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.29">
-      <div class="step-ref skipped">29</div>
-      
-      <div class="step-cell skipped">
-        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.30">
-      <div class="step-ref skipped">30</div>
-      
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(testEmail)&#39;, password: &#39;WrongPass!&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.31">
-      <div class="step-ref skipped">31</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.32">
-      <div class="step-ref skipped">32</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 401</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -819,35 +1298,35 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[3:34]">
+          <div class="scenario-heading" id="[4.1:52]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[3:34]</span>
-                <span class="scenario-name">Intento de inicio de sesión con correo no registrado (Fallo 404/401)</span>
+                Scenario: <span>[4.1:52]</span>
+                <span class="scenario-name">Consultar informacion general del servicio de autenticacion</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>134</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[3:34]bg">
+            <div class="step-container" id="[4.1:52]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[3:34]bg"><div>
+          <div data-parent="[4.1:52]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
+    <div class="step-container" id="1.4">
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
@@ -863,7 +1342,7 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
 
   
 
-  <div class="preformatted" data-parent="0.4">01:14:39.143 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.4">20:24:47.812 karate.env system property was: null 
 </div>   
 
   
@@ -876,39 +1355,11 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
   
 
   <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+    <div class="step-container" id="1.45">
+      <div class="step-ref passed">45</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;, &#39;sign-in&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;nonexistent@renticar.com&#39;, password: &#39;AnyPassword123&#39; }</span>
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/authentication&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -932,14 +1383,14 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
   
 
   <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
+    <div class="step-container" id="1.46">
+      <div class="step-ref passed">46</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
+        <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">131</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -948,18 +1399,16 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
 
   
 
-  <div class="preformatted" data-parent="0.37">01:14:39.148 request:
-1 &gt; POST http://localhost:8080/api/v1/authentication/sign-in
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 64
+  <div class="preformatted" data-parent="1.46">20:24:47.814 request:
+1 &gt; GET http://localhost:8080/api/v1/authentication
 1 &gt; Host: localhost:8080
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/27)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;nonexistent@renticar.com&quot;,&quot;password&quot;:&quot;AnyPassword123&quot;}
 
-01:14:39.276 response time in milliseconds: 127
-1 &lt; 500
+
+20:24:47.822 response time in milliseconds: 6
+1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
 1 &lt; Vary: Access-Control-Request-Headers
@@ -971,9 +1420,10 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 06 Oct 2026 06:14:39 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-10-06T01:14:39&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;message&quot;:&quot;An unexpected error occurred. Please try again later.&quot;,&quot;path&quot;:&quot;/api/v1/authentication/sign-in&quot;,&quot;validation_errors&quot;:null}
+1 &lt; Date: Fri, 09 Oct 2026 01:24:47 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;note&quot;:&quot;Use POST for sign-up and sign-in. This GET is informational.&quot;,&quot;endpoints&quot;:{&quot;signIn&quot;:&quot;POST /api/v1/authentication/sign-in&quot;,&quot;signUp&quot;:&quot;POST /api/v1/authentication/sign-up&quot;},&quot;examples&quot;:{&quot;signUpBody&quot;:{&quot;name&quot;:&quot;John Doe&quot;,&quot;email&quot;:&quot;john@example.com&quot;,&quot;password&quot;:&quot;yourPassword&quot;,&quot;role&quot;:&quot;arrendador|arrendatario&quot;},&quot;signInBody&quot;:{&quot;email&quot;:&quot;john@example.com&quot;,&quot;password&quot;:&quot;yourPassword&quot;}},&quot;message&quot;:&quot;Authentication API&quot;}
 
 </div>   
 
@@ -987,14 +1437,14 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
   
 
   <div class="step-row">
-    <div class="step-container" id="0.38">
-      <div class="step-ref failed">38</div>
+    <div class="step-container" id="1.47">
+      <div class="step-ref passed">47</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 401 || responseStatus == 404</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1003,11 +1453,35 @@ classpath:codexateam/iam/authentication/sign-in.feature:27
 
   
 
-  <div class="preformatted" data-parent="0.38">01:14:39.279 classpath:codexateam/iam/authentication/sign-in.feature:38
-Then assert responseStatus == 400 || responseStatus == 401 || responseStatus == 404
-did not evaluate to &#39;true&#39;: responseStatus == 400 || responseStatus == 401 || responseStatus == 404
-classpath:codexateam/iam/authentication/sign-in.feature:38
-</div>   
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message contains &#39;Authentication API&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
 
   
 

@@ -6,4 +6,5 @@ codexateam\booking\BookingsRunner.class
 codexateam\listings\vehicles\VehiclesRunner.class
 codexateam\iam\users\UsersRunner.class
 codexateam\iam\roles\RolesRunner.class
+codexateam\shared\WelcomeRunner.class
 codexateam\reviews\ReviewsRunner.class
